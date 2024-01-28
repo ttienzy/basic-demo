@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #32b2a7;
+}
+.wrapper {
+    margin: 0px 36px;
+    font-size: 20px;
+}
+.header {
+    background-color: #1e1b1c;
+    padding: 25px;
+    text-align: center;
+    text-shadow: rgb(172, 233, 19) 1px 0px 10px;
+    border-radius: 8px;
+}
+.header:hover {
+    background-color: aquamarine;
+}
+.nav-container {
+    display: flex;
+    padding: 24px 8px;
+    justify-content: space-around;
+    list-style: none;
+}
+.nav-item select {
+    font-size: 20px;
+    border-radius: 4px;
+    border: 0px none #32b2a7;
+    color: rgb(123, 66, 10);
+    background-color: #32b2a7;
+    cursor: pointer;
+}
+.nav-item a {
+    color: rgb(56, 45, 177);
+    text-decoration: none;
+}
+.fa-facebook {
+    color: #1e1b1c;
+}
+.fa-magnifying-glass {
+    margin-left: -25px;
+}
+
+.nav-item input {
+    border-radius: 4px;
+    padding: 8px 8px 4px 10px; 
+    font-size: 16px;
+    line-height: 16px;
+}
+.wrapper-content {
+    min-height: 200px;
+    margin: 36px 0;
+    display: flex;
+    font-size: 16px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.content-main {
+    padding: 8px 12px;
+    background-color: #f5f5f5;
+    flex-basis: 60%;
+    border-radius: 3px;
+    position: relative;
+}
+.sidebar {
+    padding: 8px 12px;
+    background-color: aqua;
+    flex-basis: 30%;
+    border-radius: 3px;
+    position: relative;
+}
+/* screen : <=740 */
+@media screen and (max-width: 46.1875em) {
+    .content-main {
+        flex-basis: 100%;
+    }
+    .sidebar {
+        flex-basis: 100%;
+    }
+    .nav-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .nav-item {
+        padding: 12px;
+    }
+}
+/* screen : >=740 && <1024*/
+@media screen and (min-width: 46.25em) and (max-width: 63.9375em)
+{
+    body {
+        background-color: rgb(189, 166, 211);
+    }
+    .nav-item a,.nav-item input,.fa-magnifying-glass {
+        display: none;
+    }
+}
+/* screen : >=1024 */
+@media screen and (min-width: 164em) 
+{
+    body {
+        background-color: #32b2a7;
+    }
+}
+.content-main div,.sidebar div {
+    width: 150px;
+    height: 50px;
+    background-color: rebeccapurple;
+    text-align: center;
+    line-height: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    text-transform: lowercase;
+    letter-spacing: 2px;
+}

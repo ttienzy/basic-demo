@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * { margin: 0; padding: 0;}
+        #wrapper {
+            margin: 12px 36px;
+            padding: 24px;
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: space-around
+            
+        }
+        #content {
+            flex-basis: 60%;
+            background-color: burlywood;
+            padding: 12px;
+            margin: 0 8px 0 0;
+        }
+        #sidebar {
+            flex-basis: calc(100vw);
+            background-color: blue;
+            text-align: center;
+            line-height: 1.8;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas aut odio autem delectus consequatur omnis blanditiis quis quisquam magnam itaque praesentium quae enim sunt quas perspiciatis commodi sapiente, fuga iusto!</p>
+            <p>Placeat, deserunt praesentium consectetur rerum sint officia, nemo maiores unde numquam consequuntur, illum vitae eos recusandae et minus voluptas sunt accusantium odio id voluptatem in iste. Nesciunt accusantium eius ullam!</p>
+            <p>Rem error nemo aliquid debitis maxime, odio illo? Perspiciatis ipsa voluptas autem. Excepturi in neque, fugit iusto natus perspiciatis tenetur commodi pariatur temporibus similique quaerat, eaque nihil, dolor sapiente nisi!</p>
+        </div>
+        <div id="sidebar">
+            <p>Hello world</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/jVCh84wktoc?si=VhStDSrRCpqM52w-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </div>
+</body>
+</html>

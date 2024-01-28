@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * 
+        { 
+            margin: 0; 
+            padding: 0;
+        }
+        .wrapper {
+            max-width: 960px;
+            margin: 0 auto;
+        }
+        .header,.footer {
+            padding: 10px;
+            background-color: grey;
+            text-align: center;
+            text-shadow: #FC0 1px 0 10px;
+        }
+        .wrapper-content {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .content {
+            padding: 12px;
+            background-color: darkgreen;
+            flex-basis: 100%;
+            box-sizing: border-box;
+        }
+        .sidebar {
+            padding: 12px;
+            background-color: darkseagreen;
+            flex-basis: 100%;
+            box-sizing: border-box;
+        }
+        @media(min-width:576px)
+        {
+            .content {
+                flex-basis: 70%;
+            }
+            .sidebar {
+                flex-basis: 30%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <h1>HEADER</h1>
+        </div>
+        <div class="wrapper-content">
+            <div class="content">
+                <h2>Content</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam blanditiis vel temporibus, consectetur sed accusantium libero eligendi commodi reiciendis voluptate?</p>
+                <p>Cupiditate cum, ex libero ducimus laudantium esse aut quos eaque quae doloribus debitis totam dolorem aliquid quo aperiam expedita numquam.</p>
+                <p>Provident laudantium deserunt adipisci aut repellendus impedit at, quasi quia ullam minus eaque expedita labore accusamus! Ut voluptas debitis deserunt?</p>
+                <p>Natus odio quas unde id est, asperiores ipsam laudantium rerum sequi at aliquid quibusdam harum corrupti nam autem quidem ex.</p>
+            </div>
+            <div class="sidebar">
+                <h2>Sider Bar</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, quam?</p>
+                <p>Eius quae rerum cupiditate laboriosam excepturi culpa eos illo ipsam!</p>
+                <p>Nihil dolor ad sunt culpa delectus soluta dicta dolorem odit!</p>
+            </div>
+        </div>
+        <div class="footer">
+            <h1>FOOTER</h1>
+        </div>
+    </div>
+</body>
+</html>

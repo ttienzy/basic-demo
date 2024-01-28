@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --static_color :chartreuse;
+}
+.parent {
+    width: 1000px;
+    height: 400px;
+    margin: 100px 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: aquamarine;
+    background-image: url(https://www.pixground.com/wp-content/uploads/2023/04/Clouds-Meet-The-Sea-AI-Generated-4K-Wallpaper.jpg);
+    background-size: 1000px 400px;
+    background-repeat: no-repeat;
+}
+.child1 {
+    color: var(--static_color);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+}
+.child2 {
+    margin-top: -70px;
+    color: var(--static_color);
+    font-size: 25px;
+}
+.child3 {
+    width: 350px;
+    height: 40px;
+    margin-bottom: 40px;
+    background-color: rgb(211, 57, 57);
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 4px;
+    color: cyan;
+}
+.child3:hover {
+    color: blueviolet;
+    background-color: cadetblue;
+    cursor: pointer;
+}

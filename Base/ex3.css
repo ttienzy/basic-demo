@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    height: 100%;
+    background-image: url(https://haycafe.vn/wp-content/uploads/2021/12/Hinh-nen-anime-4K-nui-dem-trap-trung-duoi-anh-trang.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% ;
+}
+
+.container {
+    width: 60%;
+    height: 400px;
+    background-color: rgba(0, 0, 0, 0.2);
+    margin: 5% 20% 20% 20%;
+    text-align: center;
+    line-height: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.child1 {
+    width: auto;
+    height: 100px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.child2 {
+    margin-top: 40px;
+}
+.fa-regular {
+    margin-top: 50px;
+    padding: 10px ;
+    font-size: 60px;
+    color: aqua;
+    border: 1px solid aqua;
+    border-radius: 50%;
+    
+}
+h1 {
+    font-size: 40px;
+    color: cadetblue;
+}
+p {
+    font-size: 20px;
+    color: bisque;
+    display: inline;
+}
+#email {
+    width: 200px;
+    height: 30px;
+    border-radius: 4px;
+}
+#button {
+    width: 100px;
+    height: 30px;
+    font-size: 10px;
+    background-color: rgb(52, 207, 114);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
